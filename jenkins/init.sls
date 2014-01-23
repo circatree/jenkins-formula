@@ -44,5 +44,5 @@ jenkins:
 
 jenkins-sudoer:
   cmd.run:
-    - name: echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
+    - name: echo "'jenkins ALL=NOPASSWD: ALL' >> /etc/sudoers"
     - unless: grep 'jenkins ALL' /etc/sudoers
